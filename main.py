@@ -20,9 +20,12 @@ while launched:
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_UP:
                 game.path.change_room()
+                game.add_stress()
 
             elif event.key == pygame.K_RIGHT and game.path.path == game.path.path_3 or game.path.path == game.path.path_4:
                 game.path.change_room()
+                game.screamer()
 
             elif event.key == pygame.K_LEFT and game.path.path == game.path.path_2 or game.path.path == game.path.path_4:
                 game.path.change_room()
+                game.screamer()
