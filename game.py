@@ -18,5 +18,5 @@ class Game:
         self.add_stress()
         if self.stress >= 10 and self.stress <= 11:
             print("SCREAMER")
-            self.screen.blit(self.entity.skin, (0, 0))
+            self.entity.change_skin()
 
