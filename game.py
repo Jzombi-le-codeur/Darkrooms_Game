@@ -18,5 +18,5 @@ class Game:
         self.add_stress()
         if self.stress >= 10 and self.stress <= 11:
             print("SCREAMER")
-            self.entity.change_skin()
+            self.entity.screamer()
 

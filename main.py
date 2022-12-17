@@ -11,8 +11,11 @@ launched = True
 
 while launched:
     path = game.path.path
+
     screen.blit(path, (0, 0))
+    screen.blit(game.entity.skin, (240, 320))
     pygame.display.flip()
+    game.entity.change_skin()
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             launched = False
