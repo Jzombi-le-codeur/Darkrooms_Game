@@ -3,11 +3,11 @@ from game import Game
 
 pygame.init()
 
-screen = pygame.display.set_mode((1125, 720))
+game = Game()
+
+screen = game.screen
 
 launched = True
-
-game = Game()
 
 while launched:
     path = game.path.path
